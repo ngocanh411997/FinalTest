@@ -1,0 +1,25 @@
+{
+    "Valid value":{
+        "First Name":"Niteco",
+        "Last Name": "Test",
+        "Email Address":"nitecocheck18@yopmail.com",
+        "Message":"How do I buy a product and give it to my friend?"
+    },
+    "Invalid value":{
+        "First Name":"            ",
+        "Last Name": "            ",
+        "Message": "             ",
+        "Email Address":[
+            {
+                "Email Address": "            "
+            },
+            {
+                "Email Address": "nitecocheck#gmail.com"
+            }
+        ]
+    }
+    
+    
+     
+    
+}
