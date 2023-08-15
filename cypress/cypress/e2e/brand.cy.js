@@ -15,7 +15,7 @@ describe('Brand page', () => {
     cy.url().should('include', 'https://prep.brownells.com/brand-listing-page/');
 
   })
-  it('Verify that brand displays correctly when user choose specific letter', () => {
+  it.only('Verify that brand displays correctly when user choose specific letter', () => {
     // Visit Brand page
     brandPage.visitBrandPage();
     // Click brand A button
@@ -24,7 +24,7 @@ describe('Brand page', () => {
     brandPage.assertDetailBrandTitle(BrandData["Brand A"]);
 
   })
-  it.only('Verify that user will redirect to brand page when click on specific letter', () => {
+  it('Verify that user will redirect to brand page when click on specific letter', () => {
     // Visit Brand page
     brandPage.visitBrandPage();
     // Click brand A button
@@ -36,7 +36,4 @@ describe('Brand page', () => {
 
   })
 
-  // it('', () => {
-
-  // })
 })

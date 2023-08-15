@@ -237,10 +237,6 @@ describe('Contact us page', () => {
 
     
   })
-  it.only('Verify that user will direct to brand listing page when clicked on [Shop All Our Brands At Once!]', () => {
-    
-    
-  })
   // it('', () => {
     
   // })

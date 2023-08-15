@@ -6,8 +6,8 @@ class BrandPage {
         //submitBtn: () => cy.get(),
         shopAllOurBrandsBtn: () => cy.get('.content-block__content > p > a'),
         brandABtn: () => cy.get('.manufacturer-list > :nth-child(1) > a'),
-        detailBrandTitle:() => cy.get('.manufacturer-detail__title'),
-        brandA:() => cy.get('.row > :nth-child(2) > a')
+        detailBrandTitle: () => cy.get('.manufacturer-detail__title > .upper-case'),
+        brandA: () => cy.get('.row > :nth-child(2) > a')
 
     }
 
@@ -17,13 +17,15 @@ class BrandPage {
     clickOnShopAllOurBrandsBtn() {
         this.elements.shopAllOurBrandsBtn().click();
     }
-    clickOnBrandABtn(){
+    clickOnBrandABtn() {
         this.elements.brandABtn().click();
     }
-    assertDetailBrandTitle(text){
-        this.elements.detailBrandTitle().invoke(text).should("contain",text);
+    assertDetailBrandTitle(expectedText) {
+        
+        const actual = this.elements.detailBrandTitle().invoke("text");
+        actual.should('contain', expectedText);
     }
-    clickOnBrandA(){
+    clickOnBrandA() {
         this.elements.brandA().click();
     }
 
